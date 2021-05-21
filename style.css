@@ -1,0 +1,230 @@
+/* CSS Reset */
+*{
+    margin: 0%;
+    padding: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar  */
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    opacity: 0.8;
+
+}
+/* Navigation Logo and Image */
+#logo{
+margin: 10px 20px;
+}
+#logo img{
+    margin: 12px 10px;
+    height: 75px;
+}
+
+/* Navigation List styling */
+#navbar ul{
+    display: flex;
+    
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1rem;
+    
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* color: black; */
+}#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('background 1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 648px;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+}
+#home p{
+    /* color: whitesmoke;
+    text-align: center;
+    font-size: 0.8rem;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Bree Serif',Serif; 
+    color: rgb(255, 255, 255) ;
+    text-align: center;
+    font-size: 1.1rem;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    font-family: 'Bree Serif',Serif;
+
+}
+#home h1{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Bree Serif',Serif;
+
+}
+/* Utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: salmon;
+    color: black;
+}
+.center{
+    text-align: center;
+}
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif',Serif;
+}
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 2px;
+    font-family: 'Bree Serif',Serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+border: 2px solid brown;
+padding: 34px;
+margin: 0px 6px;
+border-radius: 23px;
+background-color: rgb(240, 227, 227);
+}
+#services .box img {
+    height: 134px;
+    margin: auto;
+    display: block;
+}
+    #services .box p{
+        font-size: 0.8rem;
+        font-family: 'Bree Serif',Serif;
+}
+
+/* Client Section */
+#client-section{
+    position: relative;
+height: 344px;
+}
+#client-section::before{
+    height: 344px;
+    content: "";
+    position: absolute;
+    background: url('vintage.png');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    }
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 18px;
+}
+.clients img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+    
+}
+ /* Contact Section  */
+ #contact{
+     position: relative;
+ }
+ #contact::before{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     z-index: -1;
+     opacity: 0.9;
+     background: url('pexel.jpg')no-repeat center center/cover;
+ }
+ #contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 34px ;
+ }
+ #contact-box form{
+     width: 40%;
+ }
+ #contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif',Serif;
+}
+ #contact-box input,
+ #contact-box textarea{
+     width: 100%;
+     padding: 0.5rem;
+     border-radius: 9px;
+     font-size: 1.1rem;
+
+ }
+ /* Footer */
+
+ footer{
+     background: black;
+     color: whitesmoke;
+     padding: 9px 20px;
+ }
