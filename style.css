@@ -159,6 +159,7 @@ background-color: rgb(240, 227, 227);
 #client-section{
     position: relative;
 height: 344px;
+z-index: -1;
 }
 #client-section::before{
     height: 344px;
@@ -190,6 +191,7 @@ height: 344px;
  /* Contact Section  */
  #contact{
      position: relative;
+     z-index: -1;
  }
  #contact::before{
      content: "";
